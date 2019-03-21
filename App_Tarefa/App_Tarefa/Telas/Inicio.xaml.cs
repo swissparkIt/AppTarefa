@@ -14,7 +14,12 @@ namespace App_Tarefa.Telas
 	{
 		public Inicio ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
-	}
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Cadastro());
+        }
+    }
 }
